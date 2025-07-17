@@ -237,7 +237,7 @@ if [[ "${DISTRO}" != @(centos|oracle7|oracle8|fedora37|fedora38|fedora39|fedora4
   fi
 fi
 
-# Override default login script so users cant log themselves out of the desktop dession
+# Override default login script so users cant log themselves out of the desktop session
 cat >/usr/bin/xfce4-session-logout <<EOL
 #!/usr/bin/env bash
 notify-send "Logout" "Please logout or destroy this desktop using the Kasm Control Panel" -i /usr/share/icons/ubuntu-mono-dark/actions/22/system-shutdown-panel-restart.svg
